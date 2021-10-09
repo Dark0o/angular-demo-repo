@@ -1,0 +1,26 @@
+<div class="container">
+  <form>
+    <div class="input-container">
+      <input
+        class="fields"
+        type="text"
+        name="username"
+        placeholder="email"
+        [(ngModel)]="username"
+      />
+      <input
+        class="fields"
+        type="password"
+        name="password"
+        placeholder="password"
+        [(ngModel)]="password"
+      />
+    </div>
+    <div class="btn-container">
+      <button class="btn" (click)="onLogIn(username, password)">Log In</button>
+      <button class="btn" (click)="onSignUp(username, password)">
+        Sign Up
+      </button>
+    </div>
+  </form>
+</div>
