@@ -1,13 +1,12 @@
 <div class="wrapper">
   <h1>ToDo List</h1>
+  <h3>Whaaat</h3>
   <input type="text" [(ngModel)]="filter" placeholder="Search ToDo..." />
   <div class="sorting">
-    <label for=""
-      >Show Important:
+    <label for="">Show Important:
       <input type="checkbox" (click)="toggleImportant()" />
     </label>
-    <label
-      >Sort By:
+    <label>Sort By:
       <select (change)="selectChangeHandler($event)">
         <option value="-">-</option>
         <option value="name">Name</option>
@@ -15,17 +14,12 @@
         <option value="oldest">Oldest</option>
       </select>
     </label>
-    <label for=""
-      >Show Done:
+    <label for="">Show Done:
       <input type="checkbox" (click)="toggleDone()" />
     </label>
   </div>
 
   <app-to-do-input (onToDoAdded)="addToDo($event)"></app-to-do-input>
-  <app-to-do-item
-    *ngFor="let todo of filteredTodos"
-    [todoItem]="todo"
-    (itemDeleted)="onDelete($event)"
-    (itemChecked)="onItemChecked($event)"
-  ></app-to-do-item>
+  <app-to-do-item *ngFor="let todo of filteredTodos" [todoItem]="todo" (itemDeleted)="onDelete($event)"
+    (itemChecked)="onItemChecked($event)"></app-to-do-item>
 </div>
