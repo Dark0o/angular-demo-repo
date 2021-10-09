@@ -25,3 +25,26 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# ToDoApp
+
+## Demo user credentials
+
+```
+{
+  username: 'user1@gmail.com',
+  password: 'user1',
+},
+{
+  username: 'user2@gmail.com',
+  password: 'user2',
+},
+{
+  username: 'user3@gmail.com',
+  password: 'user3',
+},
+{
+  username: 'new@user.com',
+  password: 'new',
+}
+
+```
